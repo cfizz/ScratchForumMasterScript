@@ -65,12 +65,9 @@
             let user = userCache[username];
 
             // Finally Add Sidebar Data.
-            addData("")
-            addData("Username: " + username);
+            addData("");
             addData("First Seen: " + parseDate(user.firstseen));
             addData("Last Seen: " + parseDate(user.lastseen));
-            addData("Query Time: " + user.query_time);
-            addData("Post Id: " + getPostId());
             
             // Change Sidebar Data.
             changeData(/[0-9]+.+ posts/g, user.post_count + " post" + "s".repeat(0+(user.postcount!=1))
