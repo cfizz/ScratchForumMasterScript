@@ -29,6 +29,6 @@ No because it isn't one of those *banned things*, but merely a function. It is u
 ~~The Scratch Team haven't banned sharing JavaScript Functions I hope~~
 
 # What is next:
-@DatOneLefty creating APIv2
-Me implementing it (@bybb)
-Moar Fun Stuff!!!
+- **@DatOneLefty** creating APIv2
+- Me implementing it (@bybb)
+- Moar Fun Stuff!!!
