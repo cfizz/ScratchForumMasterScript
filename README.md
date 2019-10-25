@@ -17,7 +17,7 @@ Domain Provided by @World_Languages
 # Suggested Features List
 A big thanks to:
 
-**@Computer_Fizz** for suggesting that the real post count be slotted in to the already existing, rough post count the forums themselves proved.
+**@Computer_Fizz** for suggesting that the real post count be slotted in to the already existing, rough post count the forums themselves provide.
 
 
 # How to Use
