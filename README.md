@@ -1,3 +1,10 @@
+# NEVER RUN SCRIPTS WITHOUT FULLY UNDERSTANDING THEM
+3rd Party Scripts of any form, whether via Browser Extensions, Extensions that run scripts or pasting directly in to the console *can* and **will be** ***dangerous***! 
+
+NEVER RUN SCRIPTS WITHOUT UNDERSTANDING WHAT THEY DO!
+
+If you don't understand the code in this script ***do not run it***. Malware can be hidden *easily* when disguised in obscure function calls.
+
 # ScratchForumMasterScript
 
 Powerful Script Aimed at Augmenting the Forums
