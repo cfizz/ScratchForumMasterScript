@@ -68,9 +68,9 @@
             addData("");
             addData("First Seen: " + parseDate(user.firstseen));
             addData("Last Seen: " + parseDate(user.lastseen));
-            
+
             // Change Sidebar Data.
-            changeData(/[0-9]+.+ posts/g, user.post_count + " post" + "s".repeat(0+(user.postcount!=1))
+            changeData(/[0-9]+.+ posts/g, user.post_count + " post" + "s".repeat(0+(user.postcount!=1)))
 
             // Add Bottom Bar Data.
             addBottomData("<a href=\"https://forums.scratchstats.com/post/" + getPostId() + "/\">Permalink</a>");
