@@ -1,16 +1,3 @@
-// ==UserScript==
-// @name         Scratch Forum Master Script.
-// @website      https://captainwebservices.com/
-// @website      https://bybbworld.com
-// @website      https://shefwerld.github.io/
-// @version      0.2.0
-// @description  ENHANCE! (Thanks to: DatOneLefty and CatsUnited for doing nearly all the work!) I just added some trash (- bybb) :)
-// @author       DatOneLefty x CatsUnited x bybb <3
-// @match        https://scratch.mit.edu/discuss/*
-// @grant        none
-// ==/UserScript==
-
-
 (async function() {
     // Match Discussion Forums in General
     if (window.location.href.startsWith("https://scratch.mit.edu/discuss/") && !window.location.href.startsWith("https://scratch.mit.edu/discuss/topic/")) {
