@@ -19,6 +19,7 @@ A big thanks to:
 
 **@Computer_Fizz** for suggesting that the real post count be slotted in to the already existing, rough post count the forums themselves provide.
 
+**@venyanwarrior** for suggesting that user pages be linked on subforum listings.
 
 # How to Use
 This is a self running function, so you can either paste it in to the console on every page you want to use it on, or find some way to run it automagically on page refresh.
