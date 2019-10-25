@@ -44,6 +44,7 @@
         // Helper Functions:
         function unameFromPostLeft() {return currentPostLeft.value.children[0].children[0].children[0].innerHTML;}
         function addData(data) {currentPostLeft.value.children[0].innerHTML += "<br>" + data;}
+        function changeData(from, to) {currentPostLeft.value.children[0].innerHTML.replace(from, to);}
         function addBottomData(data) {currentPostLeft.value.parentElement.children[4].children[0].innerHTML += "<li>| " + data + " </li>";}
         function getPostId() {return currentPostLeft.value.parentElement.parentElement.parentElement.id.substr(1)}
 
@@ -66,11 +67,13 @@
             // Finally Add Sidebar Data.
             addData("")
             addData("Username: " + username);
-            addData("Real Post Count: " + user.post_count);
             addData("First Seen: " + parseDate(user.firstseen));
             addData("Last Seen: " + parseDate(user.lastseen));
             addData("Query Time: " + user.query_time);
             addData("Post Id: " + getPostId());
+            
+            // Change Sidebar Data.
+            changeData(/[0-9]+.+ posts/g, user.post_count + " post" + "s".repeat(0+(user.postcount!=1))
 
             // Add Bottom Bar Data.
             addBottomData("<a href=\"https://forums.scratchstats.com/post/" + getPostId() + "/\">Permalink</a>");
