@@ -6,12 +6,19 @@ NEVER RUN SCRIPTS WITHOUT UNDERSTANDING WHAT THEY DO!
 If you don't understand the code in this script ***do not run it***. Malware can be hidden *easily* when disguised in obscure function calls.
 
 # ScratchForumMasterScript
-
 Powerful Script Aimed at Augmenting the Forums
 
 Uses API created by @DatOneLefty
-Original Script by @DatOneLefty // "CatsUnited" @Rirurin#5969
+
+Original Script by @DatOneLefty and @CatsUnited
+
 Domain Provided by @World_Languages
+
+# Suggested Features List
+A big thanks to:
+
+**@Computer_Fizz** for suggesting that the real post count be slotted in to the already existing, rough post count the forums themselves proved.
+
 
 # How to Use
 This is a self running function, so you can either paste it in to the console on every page you want to use it on, or find some way to run it automagically on page refresh.
