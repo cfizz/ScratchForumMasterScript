@@ -1,3 +1,16 @@
+// ==UserScript==
+// @name         Scratch Forum Master Script.
+// @website      https://captainwebservices.com/
+// @website      https://bybbworld.com
+// @website      https://shefwerld.github.io/
+// @version      0.2.0
+// @description  ENHANCE! (Thanks to: DatOneLefty and CatsUnited for doing nearly all the work!) I just added some trash (- bybb) :)
+// @author       DatOneLefty x CatsUnited x bybb <3
+// @match        https://scratch.mit.edu/discuss/*
+// @grant        none
+// ==/UserScript==
+
+
 (async function() {
     // Match topics.
     if (window.location.href.startsWith("https://scratch.mit.edu/discuss/topic/")) {
@@ -44,7 +57,7 @@
         // Helper Functions:
         function unameFromPostLeft() {return currentPostLeft.value.children[0].children[0].children[0].innerHTML;}
         function addData(data) {currentPostLeft.value.children[0].innerHTML += "<br>" + data;}
-        function changeData(from, to) {currentPostLeft.value.children[0].innerHTML.replace(from, to);}
+        function changeData(from, to) {currentPostLeft.value.children[0].innerHTML = currentPostLeft.value.children[0].innerHTML.replace(from, to);}
         function addBottomData(data) {currentPostLeft.value.parentElement.children[4].children[0].innerHTML += "<li>| " + data + " </li>";}
         function getPostId() {return currentPostLeft.value.parentElement.parentElement.parentElement.id.substr(1)}
 
