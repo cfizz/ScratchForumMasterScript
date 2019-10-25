@@ -12,6 +12,24 @@
 
 
 (async function() {
+    // Match Discussion Forums in General
+    if (window.location.href.startsWith("https://scratch.mit.edu/discuss/") && !window.location.href.startsWith("https://scratch.mit.edu/discuss/topic/")) {
+        function* makeListIter() {
+            let list = document.getElementsByClassName("byuser");
+            for (let i in list) {
+                yield list[i];
+            }
+        }
+
+        let listIter = makeListIter();
+        let item = listIter.next();
+        while (!listIter.done) {
+            let tmp = item.value.innerHTML.substr(3);
+            item.value.innerHTML = ` by <a href="https://scratch.mit.edu/users/${tmp}/">` + tmp + "</a>";
+            item = listIter.next()
+        }
+    }
+
     // Match topics.
     if (window.location.href.startsWith("https://scratch.mit.edu/discuss/topic/")) {
         // This is very hard to read.
@@ -78,12 +96,15 @@
             let user = userCache[username];
 
             // Finally Add Sidebar Data.
-            addData("");
+            addData("")
+            addData("Username: " + username);
             addData("First Seen: " + parseDate(user.firstseen));
             addData("Last Seen: " + parseDate(user.lastseen));
+            addData("Query Time: " + user.query_time);
+            addData("Post Id: " + getPostId());
 
             // Change Sidebar Data.
-            changeData(/[0-9]+.+ posts/g, user.post_count + " post" + "s".repeat(0+(user.postcount!=1)))
+            changeData(/[0-9]+.+ posts/g, user.post_count + " post" + "s".repeat(0+(user.postcount!=1)));
 
             // Add Bottom Bar Data.
             addBottomData("<a href=\"https://forums.scratchstats.com/post/" + getPostId() + "/\">Permalink</a>");
